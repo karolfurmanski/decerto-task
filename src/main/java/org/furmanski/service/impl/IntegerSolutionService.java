@@ -12,7 +12,7 @@ import java.util.function.BinaryOperator;
 
 @Service
 @RequiredArgsConstructor
-public class IntegerSolutionServiceImpl implements SolutionService<Integer> {
+public class IntegerSolutionService implements SolutionService<Integer> {
 
     private final SourceService<Integer> javaRandomSourceService;
     private final SourceService<Integer> randomOrgSourceService;
