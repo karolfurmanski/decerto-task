@@ -13,12 +13,12 @@ import java.util.Random;
 @RequiredArgsConstructor
 public class JavaRandomSourceService implements SourceService<Integer> {
 
-    private final JavaRandomConfigProperties randomOrgConfigProperties;
+    private final JavaRandomConfigProperties javaRandomConfigProperties;
 
     @Override
     public List<Integer> getValues(int count) {
         Random random = new Random();
-        Integer max = randomOrgConfigProperties.getMax();
+        Integer max = javaRandomConfigProperties.getMax();
         List<Integer> values = new ArrayList<>(count);
         for (int i = 0; i < count; i++) {
             values.add(random.nextInt(max));
